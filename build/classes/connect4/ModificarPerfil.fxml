@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backInit" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="connect4.ModificarPerfilController">
+   <top>
+      <Label prefHeight="58.0" prefWidth="256.0" text="Modificar Perfil" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Agency FB Bold" size="47.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="388.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="55.0" prefWidth="600.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="559.0" text="Introduzca su nombre de usuario">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="nameText" prefHeight="25.0" prefWidth="278.0">
+                     <HBox.margin>
+                        <Insets left="-340.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="600.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label text="Nueva Contraseña">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="newPass" prefHeight="25.0" prefWidth="284.0">
+                     <HBox.margin>
+                        <Insets left="120.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="600.0">
+               <children>
+                  <Label text="Nuevo correo">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="newMail" prefHeight="25.0" prefWidth="284.0">
+                     <HBox.margin>
+                        <Insets left="145.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="600.0">
+               <children>
+                  <Label text="Fecha de nacimiento">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="newDate" prefHeight="25.0" prefWidth="171.0">
+                     <HBox.margin>
+                        <Insets left="110.0" top="10.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="55.0" prefWidth="600.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="559.0" text="Escoja su foto de perfil">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="avatar4" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="50.0" stylesheets="@background.css">
+                     <HBox.margin>
+                        <Insets left="-125.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="button" />
+                        <String fx:value="avatar4" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="avatar3" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="50.0" stylesheets="@background.css">
+                     <HBox.margin>
+                        <Insets left="-125.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="avatar3" />
+                        <String fx:value="button" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="avatar2" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="50.0" stylesheets="@background.css">
+                     <HBox.margin>
+                        <Insets left="-125.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="avatar2" />
+                        <String fx:value="button" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="avatar1" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="50.0" stylesheets="@background.css">
+                     <HBox.margin>
+                        <Insets left="-125.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="avatar1" />
+                        <String fx:value="button" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="Confirmed" mnemonicParsing="false" onAction="#modify" style="-fx-background-color: #FFFFFF; -fx-border-color: #FF0000;" text="Confirmar">
+               <VBox.margin>
+                  <Insets left="500.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

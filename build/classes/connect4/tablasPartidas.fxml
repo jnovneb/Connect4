@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backInit" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="connect4.TablasPartidasController">
+   <top>
+      <Label text="PARTIDAS" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Agency FB Bold" size="49.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <left>
+      <VBox prefHeight="320.0" prefWidth="155.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="initDate" prefHeight="25.0" prefWidth="172.0" promptText="Fecha inicio" showWeekNumbers="true">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </DatePicker>
+            <DatePicker fx:id="finalDate" promptText="Fecha final" showWeekNumbers="true">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </DatePicker>
+            <TextField fx:id="nickName" promptText="Escriba el nombre de usuario">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="limpiarButton" mnemonicParsing="false" onAction="#limpiar" prefHeight="27.0" prefWidth="159.0" styleClass="remembContra" stylesheets="@background.css" text="Limpiar tabla">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="partidasRealizadas" mnemonicParsing="false" onAction="#matchesDone" prefHeight="27.0" prefWidth="125.0" styleClass="remembContra" stylesheets="@background.css" text="Partidas realizadas">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="partidasPlayer" mnemonicParsing="false" onAction="#matchPlayer" styleClass="remembContra" text="Partidas del jugador">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="winsPlayer" mnemonicParsing="false" onAction="#winButton" prefHeight="27.0" prefWidth="125.0" styleClass="remembContra" text="Victorias jugador">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="losePlayer" mnemonicParsing="false" onAction="#loseButton" prefHeight="27.0" prefWidth="125.0" styleClass="remembContra" text="Derrotas jugador">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="matchGraphic" mnemonicParsing="false" onAction="#partidaGrafica" prefHeight="27.0" prefWidth="125.0" styleClass="remembContra" text="Gráfica partidas">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <ListView fx:id="rankingList" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="264.0" prefWidth="297.0" stylesheets="@background.css" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

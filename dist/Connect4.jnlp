@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Connect4.jnlp">
+  <information>
+    <title>Connect4</title>
+    <vendor>JNovNeb</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Connect4.jar" size="10014077" download="eager" />
+    <jar href="lib\Connect4.jar" size="178385" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.30.1.jar" size="6096861" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="connect4.Connect4"  name="Connect4" />
+  <update check="always"/>
+</jnlp>

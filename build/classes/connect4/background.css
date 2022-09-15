@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-abr-2021, 17:57:46
+    Author     : JNovNeb
+*/
+
+.bodybg{
+    -fx-background-image: url("background.jpg");
+    -fx-background-size: 100% 100%;   
+}
+
+.button{
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-background-color: F443FF;
+}
+
+.button:focused{
+    -fx-border-color: transparent;
+    -fx-border-width: 1, 1;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;  
+}
+.button:pressed {
+    -fx-background-color: F443FF;
+    -fx-text-fill: white;
+}
+.backInit{
+    -fx-background-image: url("InitSes.png");
+    -fx-background-size: 100% 100%;    
+}
+.remembContra{
+    -fx-background-image: url("RemembContra.png");
+    -fx-background-size: 100% 100%;   
+}
+.exit{
+    -fx-background-image: url("cerrar.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+.search{
+    -fx-background-image: url("lupa.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-size: 100% 100%;
+    
+}
+.bright{
+    -fx-background-image: url("sun.png");
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-background-size: 100% 100%;
+}
+
+.bodybg2{
+    -fx-background-image: url("background2.jpg");
+    -fx-background-size: 100% 100%;   
+}
+
+.avatar1{
+    -fx-background-image: url("avatar1.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+.avatar2{
+    -fx-background-image: url("avatar2.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+.avatar3{
+    -fx-background-image: url("avatar3.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+.avatar4{
+    -fx-background-image: url("avatar4.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+.button:hover,.button:focused{
+    -fx-background-color: linear-gradient(darkred,red);
+}
